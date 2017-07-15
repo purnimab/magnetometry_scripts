@@ -31,6 +31,7 @@ else:
     sys.exit(1)
 
 #centering mode does a centering scan before a measurement scan - only every other scan is valid
+#most often used with MvsT because of straw thermal expansion
 if len(sys.argv) > 2:
     centering = sys.argv[2] == 'centering'
 else:
